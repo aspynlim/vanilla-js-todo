@@ -1,0 +1,111 @@
+@import "_variables";
+
+.container {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  padding: {
+    top: 50px;
+    bottom: 10px;
+  }
+}
+
+form {
+  background-color: $white;
+  padding: 15px;
+  border: {
+    radius: 5px;
+  }
+  display: flex;
+}
+
+input[type="text"] {
+  height: 30px;
+  outline: 0;
+  border: none;
+  font: {
+    size: 1rem;
+  }
+  color: $gray;
+  flex-grow: 1;
+}
+
+button {
+  font: {
+    size: 1.5rem;
+  }
+  background: {
+    color: $white;
+  }
+  border: none;
+  color: $gray;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.todoList {
+  background: {
+    color: $white;
+  }
+  border: {
+    radius: 5px;
+  }
+  margin: {
+    top: 20px;
+  }
+  padding: 10px 25px;
+  height: 100%;
+}
+
+ul {
+  padding: {
+    left: 0;
+  }
+}
+
+li {
+  display: flex;
+  align-items: center;
+  border: {
+    bottom: 1px solid $gray;
+  }
+  padding: {
+    top: 15px;
+    bottom: 15px;
+  }
+  font: {
+    size: 1rem;
+  }
+  color: $gray;
+}
+
+.todo-item {
+  flex-grow: 1;
+}
+
+.clearAll {
+  display: flex;
+  justify-content: flex-end;
+  padding: 3px;
+  cursor: pointer;
+  font: {
+    size: 0.9rem;
+  }
+}
+
+.todo-list-item {
+  transition: all 0.3s ease-out;
+}
+
+.todo-list-item-all {
+  transform: translateY(12rem) rotateZ(10deg);
+  opacity: 0;
+}
